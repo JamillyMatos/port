@@ -170,11 +170,14 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box{
+    width: 50%; /* cada box ocupa 30% do container */
+    min-width: 250px; /* evita que fique muito pequeno em telas menores */
     border:#fff;
     border-radius: 20px;
     color: #fff;
-    padding: 40px;
+    padding: 50px 2%;
     margin-top: 45px; /*afastar do top*/
+    margin-left: -30px;
     transition: .2s;
 }
 
@@ -317,7 +320,7 @@ form .btn-enviar{
 }
 
 form .btn-enviar input{
-    width: 120px;
+    width: 110px;
     background-color: brown;
     color: #000;
     font-weight: 700;
@@ -327,7 +330,7 @@ form .btn-enviar input{
 
 /*pé*/
 footer{
-    padding: 40px 4%;
+    padding: 0px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
@@ -336,22 +339,18 @@ footer .flex{
 }
 
 footer .line-footer{
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .borda{
     border-top: 2px solid brown;
 }
 
-footer .line-footer p i{
-    color: brown;
-    font-size: 22px;
-}
-
 footer .line-footer p a{
     color: #fff;
 }
 .copy{
+    margin-top: 10px;
     text-align: center;
     color: #fff;
 }
