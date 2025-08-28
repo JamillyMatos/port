@@ -94,13 +94,14 @@ header .btn-contato button:hover{
 
 /*topo do site*/
 
-section .topo-do-site{
+section.topo-do-site{
     padding: 40px 4%;
 }
 
-section .topo-do-site .flex{
+section.topo-do-site .flex{
     align-items: center;
     justify-content: center;
+    gap: 90px;
 }
 
 .topo-do-site h1{
@@ -135,6 +136,7 @@ section .topo-do-site .flex{
 
 /*especialidades*/
 section.especialidades{
+    margin-top: 155px; /*afastar do top*/
     padding: 40px 4%;
 }
 
@@ -331,7 +333,82 @@ footer .line-footer p a{
 
 @media screen and (max-width: 1020px)
 {
-    menu-desktop{
+    /*CLASSES GERAIS*/
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 32px;
+        line-height:30px;
+    }
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    /*cabeçalho*/
+    .menu-desktop, .btn-contato{
         display: none;
+    }
+
+    /*TOPO DO SITE*/
+    section.topo-do-site{
+    padding: 5px 2%;
+    }
+
+    .topo-do-site h1{
+    font-size: 28px;
+    }
+
+    .topo-do-site .img-topo-site img{
+    width: 100%;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    }
+
+    section.topo-do-site .flex{
+    gap: 40px;
+    }
+
+    /*ESPECIALIDADES*/
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    /*SOBRE*/
+    section.sobre{
+    padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /*PORTFOLIO*/
+    section.portfolio{
+        padding: 40px 4%;
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    /*RODAPE*/
+    footer .flex{
+        flex-direction: column;
+        text-align: center;
     }
 }
