@@ -9,6 +9,11 @@
     font-size: 20px;
 }
 
+header .logo img{
+    margin-top: 20px;
+    max-height: 140px; 
+}
+
 body{
     background-color: black;
     height: 100vh;
@@ -55,11 +60,12 @@ button:hover, form .btn-enviar input:hover{
 
 /*cabeçalho*/
 header{ 
+    margin-top: -50px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 110px;
+    height: 120px;
     background-color: black;
     z-index: 1000; /*deixa sempre acima do conteúdo*/
 }
@@ -107,8 +113,11 @@ header .btn-contato button:hover{
 
 /*topo do site*/
 .topo-do-site{
-    margin-top: 240px;
-    height: 70vh;
+    background: radial-gradient(circle at top right,#6f0000 -5%, #2F3437 40%, #000000 100%);
+    color: #fff; /* deixa o texto branco para contraste */
+    padding: 60px 0;
+    margin-top: 70px;
+    height: 82vh;
     width: 100%;
 }
 
@@ -330,27 +339,36 @@ form .btn-enviar input{
 
 /*pé*/
 footer{
-    padding: 0px 4%;
+    height: 25vh;
+    padding: 10px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
 footer .flex{
+    margin-top: 30px; 
     justify-content: space-between;
 }
 
 footer .line-footer{
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .borda{
+    width: 100%; /* centraliza e ajusta a largura */
+    margin: -30px auto; /* espaço acima e abaixo */
     border-top: 2px solid brown;
 }
 
 footer .line-footer p a{
     color: #fff;
 }
+footer .logo-footer img {
+    max-height: 130px; /* ajusta o tamanho do logo */
+}
+
+
 .copy{
-    margin-top: 10px;
+    margin-top: 10px; 
     text-align: center;
     color: #fff;
 }
